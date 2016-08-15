@@ -1,0 +1,9 @@
+
+<%@posts.each do |post|%>
+<%= post.name %>
+<%= post.content %>
+<%end%>
+
+<% if @post %>
+<%= "#{@post.name} was deleted" %>
+<%end%>
